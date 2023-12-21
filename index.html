@@ -1,0 +1,56 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>OroBook Login page</title>
+</head>
+<script type="text/javascript">
+	var input = document.getElementById("password");
+
+	
+	function display(form) {
+		if (form.username.value == "Galoo") {
+			if (form.password.value == "2244") {
+				location = "page2.html"
+			} else {
+				alert("Jechi Darbii Dogoggora ")
+			}
+		} else {
+			alert("Invalid Login Attempt")
+		}
+	}
+</script>
+
+<body>
+	<div class="container">
+		<div class="screen">
+			<div class="screen__content">
+				<form class="login">
+					<h1>Login Page</h1>
+					<div class="login__field">
+						<i class="login__icon fas fa-user"></i>
+						
+						<input type="text" class="login__input" placeholder="User name" name="username"/>
+					</div>
+					<div class="login__field">
+						<i class="login__icon fas fa-lock"></i>
+
+						<input id="password" type="password" name="password" class="login__input" placeholder="Password" />
+					</div>
+					<br>
+					<input class="button__icon fas fa-chevron-right" id="button" type="button" value="Login" onClick="display(this.form)"/>
+
+				</form>
+
+			</div>
+			<div class="screen__background">
+				<span class="screen__background__shape screen__background__shape4"></span>
+				<span class="screen__background__shape screen__background__shape3"></span>
+				<span class="screen__background__shape screen__background__shape2"></span>
+				<span class="screen__background__shape screen__background__shape1"></span>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
